@@ -928,7 +928,127 @@ border-radius: 15px;
          left: 5%;
          width: 50%;
      }
+/* =========================
+   RESPONSIVIDADE - CELULAR
+========================= */
 
+@media (max-width: 768px) {
+
+    .conteudo {
+        position: relative;
+        top: auto;
+        transform: none;
+        min-height: 100vh;
+        padding: 30px 15px;
+    }
+
+    .content {
+        width: 95%;
+        height: auto;
+        min-height: 650px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* Faixa rosa */
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        left: 0;
+        border-radius: 15px 15px 0 0;
+    }
+
+    /* Primeira coluna */
+    .primeiro-conteudo .primeira-coluna {
+        width: 100%;
+        height: 40%;
+        padding: 30px 20px;
+    }
+
+    .primeiro-conteudo .primeira-coluna .title {
+        font-size: 30px;
+    }
+
+    .primeiro-conteudo .primeira-coluna .descricao {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* Segunda coluna */
+    .primeiro-conteudo .segunda-coluna {
+        width: 100%;
+        height: 60%;
+        padding: 30px 20px;
+    }
+
+    .primeiro-conteudo .segunda-coluna .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* =========================
+       SEGUNDO CONTEÚDO
+    ========================= */
+
+    .segundo-conteudo {
+        width: 95%;
+        height: auto;
+        min-height: 650px;
+        flex-direction: column;
+    }
+
+    .segundo-conteudo .primeira-coluna,
+    .segundo-conteudo .segunda-coluna {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    /* Remove os deslocamentos usados no computador */
+    .segundo-conteudo .primeira-coluna .title,
+    .segundo-conteudo .primeira-coluna .social-media,
+    .segundo-conteudo .primeira-coluna .form,
+    .segundo-conteudo .primeira-coluna .descricao,
+    .segundo-conteudo .segunda-coluna .title,
+    .segundo-conteudo .segunda-coluna .descricao,
+    .segundo-conteudo .segunda-coluna .btn {
+        left: 0;
+    }
+
+    .segundo-conteudo .primeira-coluna .title,
+    .segundo-conteudo .segunda-coluna .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .segundo-conteudo .segunda-coluna .descricao {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste da faixa rosa quando estiver do lado direito */
+    .entrar-js .content::before {
+        left: 0;
+        top: 60%;
+        width: 100%;
+        height: 40%;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .inscreve-se-js .content::before {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 40%;
+        border-radius: 15px 15px 0 0;
+    }
+
+}
      to {
          left: 0;
          width: 40%;
