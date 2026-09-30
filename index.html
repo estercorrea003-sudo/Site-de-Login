@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="conteudo">
+
+        <!-- PRIMEIRO CONTEÚDO -->
+
+        <div class="content primeiro-conteudo">
+
+            <div class="primeira-coluna">
+
+                <h2 class="title">Bem-vindo(a) de volta!</h2>
+
+                <p class="descricao">
+                    Entre na sua conta para acessar todos os seus recursos
+                </p>
+
+                <button class="btn" id="entrar"> <strong>Entrar</strong> </button>
+            </div>
+
+
+            <div class="segunda-coluna">
+
+                <h2 class="title">Crie Uma Nova Conta</h2>
+
+                <div class="social-media">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <p class="descricao">
+                    Ou use o seu email para o registro:
+                </p>
+
+                <form class="form">
+
+                    <div class="input-container">
+                        <input type="text" id="Email"  required>
+                        <label for="Email">Email</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="password" id="Senha" placeholder=" " required>
+                        <label for="Senha">Senha</label>
+                    </div>
+                </form>
+                <button class="btn"> <strong>Inscreve-se</strong> </button>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- SEGUNDO CONTEÚDO -->
+
+        <div class="content segundo-conteudo">
+
+            <div class="primeira-coluna">
+
+                <h2 class="title">Entrar na Conta</h2>
+
+                <div class="social-media">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <p class="descricao">
+                    Ou use seus dados pessoais:
+                </p>
+
+                <form class="form">
+
+                    <div class="input-container">
+                        <input type="text" id="Usuario" required>
+                        <label for="Usuario">Usuário</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="password" id="LoginSenha" required>
+                        <label for="LoginSenha">Senha</label>
+                    </div>
+
+                    <a class="password" href="#">
+                        Esqueci a senha
+                    </a>
+
+                    <button type="submit" class="btn">
+                        <strong>Entre em sua conta</strong>
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="segunda-coluna">
+
+                <h2 class="title">Olá, amigo(a)!</h2>
+
+                <p class="descricao">
+                    Introduza os seus dados pessoais e comece a sua jornada connosco
+                </p>
+
+                <button class="btn" id="inscrevese">
+                    <strong>Inscreve-se</strong>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
